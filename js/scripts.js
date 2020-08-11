@@ -1,7 +1,6 @@
 $(document).ready(function() {
   $("button#cat").click(function() {
     $("ul#user").prepend("<li>Meow, Meow</li>");
-    $("ul#webpage").prepend("<li>Cat, again!</li>");
     $("ul#user").children("li").first().click(function() {
       $(this).remove();
     });
@@ -13,7 +12,7 @@ $(document).ready(function() {
 
   $("button#dog").click(function() {
     $("ul#user").prepend("<li>Woof, woof</li>");
-    $("ul#webpage").prepend("<li>Dog, again!</li>");
+    $("ul#user").before("<li>Dog</li>");
     $("ul#user").children("li").first().click(function() {
       $(this).remove();
     });
